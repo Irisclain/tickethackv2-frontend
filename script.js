@@ -45,4 +45,28 @@ findTrip();
               <p class="message">No trip found.</p>
     </div>
   `
+<<<<<<< HEAD
 });*/
+=======
+});
+//
+document.querySelector('#changePart').addEventListener("mouseover", function() {
+    console.log('click ok');
+  document.querySelector('#changePart').innerHTML = `
+    <div class="divider4">
+    <div class=trip>
+    <p> a >  b </p>
+    <p>heure </p>
+    <p>prix </p>
+    <button id="book">Book</button>
+    </div>
+    <div class=trip>
+    <p> a >  b </p>
+    <p>heure </p>
+    <p>prix </p>
+    <button id="book">Book</button>
+    </div>
+    </div>         
+  `
+});
+>>>>>>> 481dbbe1c3dd2d7596458b56841b29a1c33a6f6a
