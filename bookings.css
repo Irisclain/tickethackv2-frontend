@@ -50,8 +50,8 @@ body {
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
-	height: 200px;
-	width: 1000px;
+	height: 250px;
+	width: 900px;
     margin-top: 300px;
 	margin-left: 200px;
 	margin-right: 70px;
@@ -64,4 +64,32 @@ body {
     font-weight: 400;
     margin-bottom: 30px;
     margin-top: -10px;
+}
+
+.trip{
+    display:flex;
+    justify-content: space-between;
+    background-color: #f9f1ed;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+    width: 800px;
+    border-radius: 5px;
+    margin-bottom: -10px;
+    
+}
+
+.thanks{
+    font-size: 12px;
+    font-weight: 400;
+    color: #4ea891;
+    margin-bottom: 20px;
+    margin-top:-25px;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 35px;
 }
