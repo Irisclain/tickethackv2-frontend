@@ -172,7 +172,7 @@ h2 {
     
 }
 
-#book{
+.book{
     background-color: #4ea891;
     height: 35px;
 	width: 30px;
@@ -182,7 +182,13 @@ h2 {
     border-width: 0;
     
 }
+#bookBtn{
+    cursor: pointer
+}
 
 #scroll{
     overflow: scroll;
+}
+.space{
+    margin-bottom:10px;
 }

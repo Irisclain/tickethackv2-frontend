@@ -47,3 +47,6 @@ fetch(`http://localhost:3000/cart/trip`)
 })
 
 
+function deleteCart() {
+    
+}

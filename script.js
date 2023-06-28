@@ -20,16 +20,19 @@ function findTrip() {
                 <p> ${data.trip[i].departure} > ${data.trip[i].arrival} </p>
                 <p>${heure} </p>
                 <p>${data.trip[i].price}&#8364</p>
-                <button id="book">Book</button>
+                <a href="./cart.html"><button class="book" id="${data.trip[i]._id}">Book</button></a>
               </div>
-            </div>      
+            </div>     
+            <div class="space">
+            </div> 
           `
+          addTriptoCart()
           }
         } else if (!data.result){
           document.querySelector('#changePart').innerHTML = `
             <div class="divider3">
               </div>
-                <img class="notfound" src="/Users/irisclain/Desktop/lacapsule-fullstack/week4/tickethack/images/notfound.png"/>
+                <img class="notfound" src="./images/notfound.png"/>
                 <p><HR ALIGN=CENTER WIDTH="220" color="#4ea891"></p>
                 <p class="message">No trip found.</p>
             </div>
@@ -38,4 +41,21 @@ function findTrip() {
     });    
   })
 }
-findTrip();
+function addTriptoCart() {
+  for (let i = 0; i < document.querySelectorAll('.book').length;i++){
+    document.querySelectorAll('.book')[i].addEventListener('click',function() {
+      console.log('clickdetected')
+      const id = this.id
+      fetch(`http://localhost:3000/cart/newTrip`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json' },
+      body: JSON.stringify({id})
+      })
+    })
+  }
+  
+}
+findTrip()
+addTriptoCart();
+
+
