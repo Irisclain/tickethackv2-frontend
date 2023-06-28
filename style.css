@@ -180,3 +180,7 @@ h2 {
     font-size: 12px;
     border-width: 0;
 }
+
+#scroll{
+    overflow: scroll;
+}
