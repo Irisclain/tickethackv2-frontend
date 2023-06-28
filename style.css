@@ -96,6 +96,7 @@ h2 {
     font-size: 13px;
     border-width: 0;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .train{
@@ -179,6 +180,7 @@ h2 {
     color: white;
     font-size: 12px;
     border-width: 0;
+    
 }
 
 #scroll{

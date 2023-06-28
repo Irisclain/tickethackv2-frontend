@@ -7,25 +7,30 @@ fetch(`http://localhost:3000/cart/trip`)
     if(data.result) {
         document.querySelector('.connexionCard').innerHTML = `<div class="divider">
         </div>
-        <p class="title">My bookings</p>`
+        <p class="title">My cart</p>`
+        let sum = 0
         for (let i = 0; i < data.newTrip.length; i++) {
             for (let n = 0; n < data.newTrip[i].trip.length; n++) {
             let heure = new Date(data.newTrip[i].trip[n].date);
             heure = moment(heure).format('h:mm');
-            let timetoDeparture =
+            
             document.querySelector('.connexionCard').innerHTML += `
             <div class="divider4">
                 </div>
                 <div class=trip>
                     <p> ${data.newTrip[n].trip[n].departure} > ${data.newTrip[i].trip[n].arrival}</p>
-                    <p></p>
-                    <p>${data.newTrip[n].trip[n].price}&#8364</p>
                     <p>${heure}</p>
+                    <p>${data.newTrip[n].trip[n].price}&#8364</p>
+                    
+                    <button id="delete">X</button>
                 </div>
                 `
+                sum+= data.newTrip[n].trip[n].price
                 }}
                 document.querySelector('.connexionCard').innerHTML+=`<p><HR ALIGN=CENTER WIDTH="170" color="black"></p>
-                <p class="thanks">Enjoy your travel with Tickethacks!</p>
+                <div id="totalContainer"><p id="total">Total : ${sum}&#8364</p>
+                <a href="./bookings.html" id="linkButton"><button type="button" id="purchase">Purchase</button></a>
+                </div>
                 </div>
                 </div>`
        
