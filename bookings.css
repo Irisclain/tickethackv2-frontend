@@ -44,3 +44,24 @@ body {
     font-weight: 600;
     text-decoration: none;
 }
+
+.connexionCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 200px;
+	width: 1000px;
+    margin-top: 300px;
+	margin-left: 200px;
+	margin-right: 70px;
+    border-radius: 8px;
+	background-color: white;
+}
+
+.message{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
