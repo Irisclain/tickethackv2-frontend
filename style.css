@@ -1,0 +1,182 @@
+body {
+    background-image: url('/Users/irisclain/Desktop/lacapsule-fullstack/week4/tickethack/images/background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family:'Inter', sans-serif;
+}
+
+#header{
+    display: flex;
+    margin:0px 0px -50px 0px;
+    height: 6vh;
+    background-color: white;
+}
+
+#brand{
+    color: #4ea891;
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 8px;;
+    text-decoration: none;
+}
+
+#btns{
+    margin-left: 1140px;
+    margin-top: 10px;
+}
+
+#btn-cart{
+    color: black;
+    border-width: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#btn-bookings{
+    margin-left: 20px;
+    color: black;
+    border-width: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#textHeader {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: white;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 70px;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-weight: 300;
+	opacity: 1.8;
+    margin-top: -3px;
+    font-size: 20px;
+}
+
+#container {
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.connexionCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 360px;
+	width: 320px;
+    margin-top: -300px;
+	margin-left: 70px;
+	margin-right: 70px;
+    border-radius: 8px;
+	background-color: white;
+}
+
+#search{
+    background-color: #4ea891;
+    height: 35px;
+	width: 280px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    border-width: 0;
+    margin-bottom: -20px;
+}
+
+.train{
+    height: 115px;
+    width: 115px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+.message{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 190px;
+    margin-top: 0px;
+}
+
+#departure{
+    font-size: 15px;
+    margin-left: center;
+    margin-top: -115px;
+    margin-bottom: -230px;
+    padding: 10px;
+    width: 270px; 
+    background-color: #f2f4f3;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+#arrival{
+    font-size: 15px;
+    margin-left: center;
+    margin-top: -230px;
+    margin-bottom: 70px;
+    padding: 10px;
+    width: 270px;
+    background-color: #f2f4f3;
+    border-width: 0;
+    border-radius: 5px;
+
+}
+
+#date{
+    font-size: 15px;
+    margin-left: center;
+    margin-top: -110px;
+    padding: 10px;
+    width: 270px;
+    background-color: #f2f4f3;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: rgb(127, 127, 127);
+}
+
+.notfound{
+    height: 115px;
+    width: 115px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+.trip{
+    display:flex;
+    justify-content: space-between;
+    background-color: #f2f4f3;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+    width: 280px;
+    border-radius: 5px;
+    
+}
+
+#book{
+    background-color: #4ea891;
+    height: 35px;
+	width: 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    border-width: 0;
+}

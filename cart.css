@@ -1,0 +1,67 @@
+body {
+    background-color: #f2f4f3;
+    background-size: cover;
+    margin: 0px;
+    font-family:'Inter', sans-serif;
+}
+
+#header{
+    display: flex;
+    margin:0px 0px -50px 0px;
+    height: 6vh;
+    background-color: white;
+}
+
+#brand{
+    color: #4ea891;
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 8px;;
+    text-decoration: none;
+}
+
+#btns{
+    margin-left: 1140px;
+    margin-top: 10px;
+}
+
+#btn-cart{
+    color: black;
+    border-width: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#btn-bookings{
+    margin-left: 20px;
+    color: black;
+    border-width: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.connexionCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 200px;
+	width: 1000px;
+    margin-top: 300px;
+	margin-left: 200px;
+	margin-right: 70px;
+    border-radius: 8px;
+	background-color: white;
+}
+
+.message{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
