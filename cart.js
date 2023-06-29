@@ -17,23 +17,23 @@ fetch(`http://localhost:3000/cart/trip`)
             document.querySelector('.connexionCard').innerHTML += `
             <div class="divider4">
                 </div>
-                <div class=trip>
-                    <p> ${data.newTrip[n].trip[n].departure} > ${data.newTrip[i].trip[n].arrival}</p>
+                <div class=trip id="${data.newTrip[i]._id}">
+                    <p> ${data.newTrip[i].trip[n].departure} > ${data.newTrip[i].trip[n].arrival}</p>
                     <p>${heure}</p>
-                    <p>${data.newTrip[n].trip[n].price}&#8364</p>
+                    <p>${data.newTrip[i].trip[n].price}&#8364</p>
                     
-                    <button id="delete">X</button>
+                    <button class="delete">X</button>
                 </div>
                 `
                 sum+= data.newTrip[n].trip[n].price
                 }}
                 document.querySelector('.connexionCard').innerHTML+=`<p><HR ALIGN=CENTER WIDTH="170" color="black"></p>
                 <div id="totalContainer"><p id="total">Total : ${sum}&#8364</p>
-                <a href="./bookings.html" id="linkButton"><button type="button" id="purchase">Purchase</button></a>
+                <a href="./bookings.html" id="linkButton"><button type="button" id="purchase" >Purchase</button></a>
                 </div>
                 </div>
                 </div>`
-       
+                deleteCart()
     } else if(!data.result) {
         document.querySelector('#changePart').innerHTML = `<div class="connexionCard" id="cart">
         <div>
@@ -48,5 +48,18 @@ fetch(`http://localhost:3000/cart/trip`)
 
 
 function deleteCart() {
-    
-}
+    for (let i = 0; i < document.querySelectorAll('.delete').length;i++){
+        document.querySelectorAll('.delete')[i].addEventListener('click',function() {
+          console.log('clickdetected')
+          const id = this.parentNode.id
+          console.log(id)
+          fetch(`http://localhost:3000/cart/deleteATrip/${id}`, {
+          method: 'DELETE',
+          })
+            this.parentNode.remove()
+          })
+        }
+        }
+      
+
+

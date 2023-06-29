@@ -80,7 +80,7 @@ body {
     border-radius: 5px;
     
 }
-#delete{
+.delete{
     background-color: #4ea891;
     height: 40px;
 	width: 40px;
